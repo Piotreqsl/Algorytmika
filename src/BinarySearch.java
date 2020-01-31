@@ -16,8 +16,12 @@ public class BinarySearch {
         return -1;
     }
 
+
+
     public static void main(String[] args) {
         int[] test = {1,4,8,12,15,17};
         System.out.println(rank(1, test));
+
+
     }
 }
