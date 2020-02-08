@@ -1,3 +1,5 @@
+package Data_Structures;
+
 public class Queue<Item> {
     private Node first;
     private Node last;

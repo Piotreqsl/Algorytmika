@@ -1,3 +1,5 @@
+package Data_Structures;
+
 public class Stack<Item> {
     private Node first;
     private int N;
