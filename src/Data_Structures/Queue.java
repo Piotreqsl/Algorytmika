@@ -17,7 +17,7 @@ public class Queue<Item> {
     public void enqueue(Item item)
     {
         Node oldlast = last;
-        Node last = new Node();
+        last = new Node();
         last.item = item;
         last.next = null;
         if (isEmpty()) first = last; //If queue is empty the only one element is first and last
