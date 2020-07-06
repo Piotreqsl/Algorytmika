@@ -4,7 +4,7 @@ public class BBST<Key extends Comparable<Key>, Value> {
     private static final boolean RED = true;
     private static final boolean BLACK = false;
 
-    public Node root;
+    private Node root;
 
     private class Node
     {
@@ -34,7 +34,7 @@ public class BBST<Key extends Comparable<Key>, Value> {
     }
 
 
-    Node rotateLeft(Node h)
+    private Node rotateLeft(Node h)
     {
         Node x = h.right;
         h.right = x.left;
@@ -46,7 +46,7 @@ public class BBST<Key extends Comparable<Key>, Value> {
         return x;
     }
 
-    Node rotateRight(Node h)
+    private Node rotateRight(Node h)
     {
         Node x = h.left;
         h.left = x.right;
@@ -58,7 +58,7 @@ public class BBST<Key extends Comparable<Key>, Value> {
         return x;
     }
 
-    void flipColors(Node h)
+    private void flipColors(Node h)
     {
         h.color = RED;
         h.left.color = BLACK;
